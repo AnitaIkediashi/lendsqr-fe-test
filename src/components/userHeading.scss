@@ -1,0 +1,182 @@
+$color-blue-50: #545f7d;
+$color-blue-100: #213f7d;
+$color-white: #ffffff;
+$button-color: #39CDCC;
+
+.user {
+  margin: 5rem 3rem 3rem;
+
+  .user__link {
+    font-family: "Work Sans", sans-serif;
+    cursor: pointer;
+
+    &::before {
+      content: url("../assets/left-arrow.svg");
+      margin-right: 0.8rem;
+    }
+  }
+
+  .user__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    h2 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+    }
+
+    .user__details-btn {
+      border: 0;
+      display: flex;
+      gap: 1.5rem;
+
+      button {
+        padding: 0.8rem 1.6rem;
+        border-radius: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 1.2rem;
+        cursor: pointer;
+        font-family: "Work Sans", sans-serif;
+      }
+    }
+  }
+
+  .user__container {
+    background-color: $color-white;
+    margin-top: 3rem;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    padding: 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+
+    .user__container-top {
+      display: grid;
+      grid-template-columns: 20rem 10rem 15rem;
+      align-items: center;
+      gap: 1.5rem;
+
+      article {
+        height: 5rem;
+      }
+
+      .top__card-one {
+        border-right: 1px solid #545f7d36;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          background-color: #f0f1f5;
+          color: #213f7d;
+          font-size: 1.5rem;
+        }
+
+        .user-name {
+          span {
+            display: inline-block;
+            font-family: "Work Sans", sans-serif;
+            margin-bottom: .6rem;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: $color-blue-100;
+          }
+
+          p {
+            font-family: "Work Sans", sans-serif;
+            font-size: 1.2rem;
+            color: $color-blue-100;
+          }
+        }
+      }
+
+      .top__card-two {
+        border-right: 1px solid #545f7d36;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+          font-family: "Work Sans", sans-serif;
+          margin-bottom: 0.7rem;
+          font-weight: 500;
+          font-size: 1.3rem;
+          color: $color-blue-100;
+        }
+
+        .card__stars {
+          display: flex;
+          gap: 0.5rem;
+
+          .fa-star {
+            color: #e9b200;
+          }
+        }
+      }
+
+      .top__card-three {
+        border-right: 1px solid #545f7d36;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          font-family: "Work Sans", sans-serif;
+          margin-bottom: 0.7rem;
+          font-weight: 500;
+          font-size: 1.6rem;
+          color: $color-blue-100;
+        }
+
+        .bank__details {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+          color: $color-blue-100;
+        }
+      }
+    }
+
+    .user__container-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      p {
+        color: $button-color;
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        padding: 0 1rem;
+
+        &:hover,
+        &.active {
+          border-bottom: 1px solid $button-color;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERIES FOR MOBILE DEVICES
+@media (max-width:768px) {
+  .user .user__container .user__container-top {
+    grid-template-columns: 20rem;
+    .top__card-one,
+    .top__card-two,
+    .top__card-three {
+      border-right: 0;
+    }
+  }
+}

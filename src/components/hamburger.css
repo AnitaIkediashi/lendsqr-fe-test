@@ -1,0 +1,20 @@
+.menu {
+  position: fixed;
+  top: 4rem;
+  left: 3rem;
+  font-size: 2rem;
+  color: #545f7d;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: inline-block;
+  }
+}
+@media (max-width: 480px) {
+  .menu {
+    top: 3.8rem;
+  }
+}/*# sourceMappingURL=hamburger.css.map */

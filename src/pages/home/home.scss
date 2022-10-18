@@ -1,0 +1,38 @@
+.home {
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  grid-template-columns: 30rem 1fr;
+  grid-template-areas: 
+    'header header'
+    'sidebar main'
+    
+  ;
+  min-height: 100vh;
+
+  .home__wrapper {
+    grid-area: header;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  .main {
+    grid-area: main;
+    background: linear-gradient(to bottom, transparent, #E5E5E5);
+  }
+}
+
+// MEDIA QUERIES FOR MOBILE DEVICES
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    // grid-template-rows: 10rem 1fr;
+    grid-template-areas: 
+      'header'
+      'main'
+    ;
+
+    
+  }
+}

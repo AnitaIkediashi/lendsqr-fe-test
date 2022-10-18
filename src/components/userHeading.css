@@ -1,0 +1,150 @@
+.user {
+  margin: 5rem 3rem 3rem;
+}
+.user .user__link {
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+}
+.user .user__link::before {
+  content: url("../assets/left-arrow.svg");
+  margin-right: 0.8rem;
+}
+.user .user__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.4rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.user .user__details h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+.user .user__details .user__details-btn {
+  border: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+.user .user__details .user__details-btn button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+}
+.user .user__container {
+  background-color: #ffffff;
+  margin-top: 3rem;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+.user .user__container .user__container-top {
+  display: grid;
+  grid-template-columns: 20rem 10rem 15rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+.user .user__container .user__container-top article {
+  height: 5rem;
+}
+.user .user__container .user__container-top .top__card-one {
+  border-right: 1px solid rgba(84, 95, 125, 0.2117647059);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.user .user__container .user__container-top .top__card-one img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #f0f1f5;
+  color: #213f7d;
+  font-size: 1.5rem;
+}
+.user .user__container .user__container-top .top__card-one .user-name span {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #213f7d;
+}
+.user .user__container .user__container-top .top__card-one .user-name p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #213f7d;
+}
+.user .user__container .user__container-top .top__card-two {
+  border-right: 1px solid rgba(84, 95, 125, 0.2117647059);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user .user__container .user__container-top .top__card-two h4 {
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #213f7d;
+}
+.user .user__container .user__container-top .top__card-two .card__stars {
+  display: flex;
+  gap: 0.5rem;
+}
+.user .user__container .user__container-top .top__card-two .card__stars .fa-star {
+  color: #e9b200;
+}
+.user .user__container .user__container-top .top__card-three {
+  border-right: 1px solid rgba(84, 95, 125, 0.2117647059);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user .user__container .user__container-top .top__card-three h3 {
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #213f7d;
+}
+.user .user__container .user__container-top .top__card-three .bank__details {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #213f7d;
+}
+.user .user__container .user__container-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.user .user__container .user__container-bottom p {
+  color: #39CDCC;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.user .user__container .user__container-bottom p:hover, .user .user__container .user__container-bottom p.active {
+  border-bottom: 1px solid #39CDCC;
+}
+
+@media (max-width: 768px) {
+  .user .user__container .user__container-top {
+    grid-template-columns: 20rem;
+  }
+  .user .user__container .user__container-top .top__card-one,
+.user .user__container .user__container-top .top__card-two,
+.user .user__container .user__container-top .top__card-three {
+    border-right: 0;
+  }
+}/*# sourceMappingURL=userHeading.css.map */

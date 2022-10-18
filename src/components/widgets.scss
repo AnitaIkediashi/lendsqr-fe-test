@@ -1,0 +1,57 @@
+$color-white: #ffffff;
+$color-blue-100: #213f7d;
+
+.widgets {
+  margin: 3rem;
+
+  h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .widgets__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
+    .widget {
+      background-color: $color-white;
+      padding: 2rem;
+      border: 1px solid rgba(33, 63, 125, 0.06);
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .icon {
+        width: 28px;
+        height: 28px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+      }
+
+      h3 {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 500;
+        font-size: 1.4;
+        margin: 0;
+        padding: 0;
+        color: #545f7d;
+      }
+
+      .number {
+        @extend h3;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $color-blue-100;
+      }
+    }
+  }
+
+}
+
+

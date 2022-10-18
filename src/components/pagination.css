@@ -1,0 +1,48 @@
+.pagination {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pagination .left span {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #545f7d;
+}
+.pagination .left .number {
+  width: 5rem;
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  border: 0;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+.pagination .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.pagination .right button {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  border: 0;
+  color: #213f7d;
+}
+.pagination .right span {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #545f7d;
+}/*# sourceMappingURL=pagination.css.map */

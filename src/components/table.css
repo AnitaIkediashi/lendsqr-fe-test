@@ -1,0 +1,171 @@
+.table__wrapper {
+  background-color: white;
+  margin: 1rem 3rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  position: relative;
+}
+.table__wrapper .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__wrapper .table tr {
+  border-bottom: 0.01px solid rgba(84, 95, 125, 0.1843137255);
+}
+.table__wrapper .table tr .table__head {
+  text-align: left;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #545f7d;
+  cursor: pointer;
+}
+.table__wrapper .table tr .table__head::after {
+  content: url("../assets/filter.svg");
+  margin-left: 1rem;
+}
+.table__wrapper .table tr td {
+  text-align: left;
+  padding: 1.5rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #545f7d;
+}
+.table__wrapper .table tr .td-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table__wrapper .table tr .td-flex span {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+.table__wrapper .table tr .td-flex .fa-ellipsis-vertical {
+  cursor: pointer;
+}
+.table__wrapper .table .hide-border {
+  border-bottom: 0;
+}
+.table__wrapper .filter__wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 26rem;
+  padding: 2rem;
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+}
+.table__wrapper .filter__wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  font-family: "Work Sans", sans-serif;
+}
+.table__wrapper .filter__wrapper form .form__inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.table__wrapper .filter__wrapper form .form__inputs label {
+  margin-bottom: 0.4rem;
+  color: #213f7d;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select {
+  display: flex;
+  justify-content: space-between;
+  border: 0.01px solid rgba(84, 95, 125, 0.1843137255);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select span {
+  color: #545f7d;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select .fa-chevron-down {
+  color: #213f7d;
+  cursor: pointer;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select input {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  color: #545f7d;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select input::-moz-placeholder {
+  font-size: 1.2rem;
+  color: #545f7d;
+  opacity: 0.7;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select input:-ms-input-placeholder {
+  font-size: 1.2rem;
+  color: #545f7d;
+  opacity: 0.7;
+}
+.table__wrapper .filter__wrapper form .form__inputs .select input::placeholder {
+  font-size: 1.2rem;
+  color: #545f7d;
+  opacity: 0.7;
+}
+.table__wrapper .filter__wrapper .buttons {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.table__wrapper .filter__wrapper .buttons button {
+  flex: 1;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.table__wrapper .status {
+  position: absolute;
+  top: 17rem;
+  right: 0;
+  width: 20rem;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 2rem;
+  font-family: "Work Sans", sans-serif;
+}
+.table__wrapper .status .status__wrapper .status-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.table__wrapper .status .status__wrapper .status-content span {
+  color: #545f7d;
+}
+.table__wrapper .status .status__wrapper .status-content p {
+  color: #545f7d;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1144px) {
+  .table__wrapper .table tr .table__head::after {
+    display: none;
+  }
+}
+@media (max-width: 1104px) {
+  .table__wrapper {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,57 @@
+$color-blue-50: #545f7d;
+$color-blue-100: #213f7d;
+
+.pagination {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: $color-blue-50;
+    }
+
+    .number {
+      width: 5rem;
+      background: rgba(33, 63, 125, 0.1);
+      border-radius: 4px;
+      border: 0;
+      padding-left: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+
+    button {
+      display: grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      background: rgba(33, 63, 125, 0.1);
+      border-radius: 4px;
+      border: 0;
+      color: $color-blue-100;
+    }
+
+    span {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: $color-blue-50;
+    }
+  }
+}
